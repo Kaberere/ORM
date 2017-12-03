@@ -26,7 +26,7 @@ if __name__ == "__main__":
                       email="kaberereeve44@gmail.com")
 
     new_user = MyUser(age="25", username="andiza",
-                      password="O8o3i994", email="koenaconcepts@gmail.com")
+                      password="O", email="koenaconcepts@gmail.com")
     new_user = MyUser(age="14", username="egikuri",
                       password="malenge", email="elvisgiks@gmail.com")
     new_user = MyUser(age="13", username="aberkowitz",

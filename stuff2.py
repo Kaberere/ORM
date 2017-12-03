@@ -4,7 +4,7 @@ import psycopg2.extras
 import datetime
 
 psql_db = PostgresqlDatabase(
-    "dvdrental", host="localhost", user="kaberere", password="27538204079", port="5432")
+    "dvdrental", host="localhost", user="kaberere", password="", port="5432")
 
 
 class RentMovie(Model):
@@ -20,7 +20,7 @@ class RentMovie(Model):
 
 if __name__ == '__main__':
     conn = psycopg2.connect(
-        dbname="dvdrental", user="kaberere", host="localhost", password="27538204079")
+        dbname="dvdrental", user="kaberere", host="localhost", password="")
     RentMovie.create_table(fail_silently=True)
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     cur.execute("""SELECT title AS movie_name, rental_date, last_name AS renter_name FROM rental\
