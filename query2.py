@@ -2,7 +2,7 @@ from peewee import *
 from dvdrental import Staff, Payment, Rental
 
 psql_db = PostgresqlDatabase(
-    "dvdrental", host="localhost", user="kaberere", password="27538204079", port="5432")
+    "dvdrental", host="localhost", user="kaberere", password="", port="5432")
 
 queries = (Staff.select()
            .join(Payment)
